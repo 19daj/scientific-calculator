@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <table id="first-content">
+        <tr>
+            <td colspan="7">
+                <p id="content-result">0</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="7">
+                <p id="content-show-operations">0</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="bttn7" onclick="writeNumbers('7')">7</button>
+            </td>
+            <td>
+                <button id="bttn8" onclick="writeNumbers('8')">8</button>
+            </td>
+            <td>
+                <button id="bttn9" onclick="writeNumbers('9')">9</button>
+            </td>
+            <td>
+                <button onclick="resolvingOperations('*')">*</button>
+            </td>
+            <td>
+                <button onclick="addingFactorial()">x!</button>
+            </td>
+            <td>
+                <button onclick="addingSquareRoot()"> √x</button>
+            </td>
+            <td>
+                <button onclick="addingCe()">CE</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="bttn4" onclick="writeNumbers('4')">4</button>
+            </td>
+            <td>
+                <button id="bttn5" onclick="writeNumbers('5')">5</button>
+            </td>
+            <td>
+                <button id="bttn6" onclick="writeNumbers('6')">6</button>
+            </td>
+            <td>
+                <button onclick="resolvingOperations('/')">/</button>
+            </td>
+            <td>
+                <button onclick="addingFactorialAdd()">x!+</button>
+            </td>
+            <td>
+                <button onclick="resolvingOperations('%')">%</button>
+            </td>
+            <td>
+                <button onclick="addingC()">C</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="bttn1" onclick="writeNumbers('1')">1</button>
+            </td>
+            <td>
+                <button id="bttn2" onclick="writeNumbers('2')">2</button>
+            </td>
+            <td>
+                <button id="bttn3" onclick="writeNumbers('3')">3</button>
+            </td>
+            <td>
+                <button onclick="resolvingOperations('+')">+</button>
+            </td>
+            <td>
+                <button onclick="adding2pow()">x²</button>
+            </td>
+            <td>
+                <button onclick="resolvingOperations('^')">xy</button>
+            </td>
+            <td>
+                <button onclick="addingAc()">AC</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="addingMoreAndLess()">+/-</button>
+            </td>
+            <td>
+                <button id="bttn0" onclick="writeNumbers('0')">0</button>
+            </td>
+            <td>
+                <button onclick="addingDot()">.</button>
+            </td>
+            <td>
+                <button onclick="resolvingOperations('-')">-</button>
+            </td>
+            <td>
+                <button onclick="adding3pow()">x³</button>
+            </td>
+            <td>
+                <button onclick="addingEqualSign()">=</button>
+            </td>
+            <td>
+                <button onclick="writeNumbers('3.14159')">π</button>
+            </td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
